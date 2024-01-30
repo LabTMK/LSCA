@@ -15,7 +15,7 @@ ctFractions <- ctFractions[,-c(11,12,13)]
 colnames(ctFractions)[1] <- "GEO_ID"
 
 
-clinicalData_FP <- paste0(projectDir, "/survival_data/GSE37642_Survival_data.txt")
+clinicalData_FP <- paste0(projectDir, "/survival_and_clinical_data/GSE37642_Survival_data.txt")
 clinicalData    <- read.delim2(clinicalData_FP)
 clinicalData    <- clinicalData %>% select(GEO_ID, overall_survival_days, life.status)
 gse37642_gpl96  <- ctFractions %>% left_join(clinicalData, by="GEO_ID")
