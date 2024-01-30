@@ -4,7 +4,7 @@ library(dplyr)
 
 projectDir <- "C:/Users/informatics3/Documents/GitHub/LSCA"
 
-clinical_BeatAML_FP <- paste0(projectDir, "/survival_data/NIHMS1504008-supplement-BEAT_AML_Clinical_Data.txt")
+clinical_BeatAML_FP <- paste0(projectDir, "/survival_and_clinical_data/NIHMS1504008-supplement-BEAT_AML_Clinical_Data.txt")
 clinical_BeatAML    <- read.delim2(clinical_BeatAML_FP)
 clinical_BeatAML    <- clinical_BeatAML %>% select(LabId, overallSurvival, vitalStatus)
 
