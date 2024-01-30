@@ -3,7 +3,7 @@ library(survival)
 library(survminer)
 
 projectDir <- "C:/Users/informatics3/Documents/GitHub/LSCA"
-survivalFP <- paste0(projectDir, "/survival_data/GSE37642_Survival_data.txt")
+survivalFP <- paste0(projectDir, "/survival_and_clinical_data/GSE37642_Survival_data.txt")
 survival   <- read.delim2(survivalFP)
 
 # GPL96
