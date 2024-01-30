@@ -34,7 +34,7 @@ Table_TCGA_LAML     <- as.data.frame(Table_TCGA_LAML)
 
 
 # survival data
-tcgaSurvivalFP <- paste0(projectDir, "/survival_data/TCGA_CDR.txt")
+tcgaSurvivalFP <- paste0(projectDir, "/survival_and_clinical_data/TCGA_CDR.txt")
 tcgaSurvival   <- read.delim2(tcgaSurvivalFP)
 
 tcgaLAML              <- tcgaSurvival %>% select(bcr_patient_barcode, OS.time, vital_status)
