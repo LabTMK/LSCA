@@ -1,6 +1,5 @@
 library(dplyr)
 library(glmnet)
-library(ggpubr)
 
 projectDir  <- "C:/Users/informatics3/Documents/GitHub/LSCA"
 
