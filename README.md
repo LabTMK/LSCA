@@ -9,4 +9,4 @@ If you have any questions, please contact the email addresses provided below.
 # Schematic Overview
 This schematic figure demonstrates how LSCA score was created and validated.
 
-![figure_for_github_web_page](https://github.com/LabTMK/LSCA/assets/158116464/96497b26-45ff-4702-bc56-d3286a01ab2a)
+![figure_for_github_web_page](https://github.com/LabTMK/LSCA/assets/158116464/cfae59dc-376e-4fee-900d-97dcc1b99950)
