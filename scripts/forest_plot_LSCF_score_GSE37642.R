@@ -33,7 +33,7 @@ LSCA_score$LSCA_score <- as.numeric(LSCA_score$LSCA_score)
 
 
 # clinical data
-clinicalDataFP <- paste0(projectDir, "/survival_data/GSE37642_GPL96_phenotype_data.tsv")
+clinicalDataFP <- paste0(projectDir, "/survival_and_clinical_data/GSE37642_GPL96_phenotype_data.tsv")
 clinicalData   <- read.delim2(clinicalDataFP, check.names=FALSE)
 clinicalData   <- clinicalData %>% select(geo_accession, `fab:ch1`, `age:ch1`, `runx1-runx1t1_fusion:ch1`, 
                                           `runx1_mutation:ch1`, `overall survival (days):ch1`, `life status:ch1`)
@@ -48,7 +48,7 @@ clinicalDataForPlot <- clinicalDataForPlot[, -1]
 clinicalDataForPlot$FAB <- factor(clinicalDataForPlot$FAB, levels=c("M3", "M0", "M1", "M2", "M3v", "M4", "M5", "M6", "M7"))
 
 TFindex                           <- clinicalDataForPlot$Age >= 60
-clinicalDataForPlot$Age[TFindex]  <- "กร 60"
+clinicalDataForPlot$Age[TFindex]  <- "ยกร 60"
 clinicalDataForPlot$Age[!TFindex] <- "< 60"
 clinicalDataForPlot$Age           <- as.factor(clinicalDataForPlot$Age)
 
