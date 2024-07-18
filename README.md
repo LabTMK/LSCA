@@ -1,5 +1,5 @@
 # LSCA (Leukemic Stem Cell Activity) Score
-LSCA score was designed to predict the prognosis of AML patients using cellular abundances. If you have a set of transcriptomic data from AML patients, you can predict the patients' prognosis by calculating the LSCA score. Cellular abundances can be calculated by CIBERSORTx using a signature matrix called HemLin9, which is composed of more than 300 genes highly expressed in 9 cell types. Although the abundances of LSCs (Leukemic Stem Cells) are not considered when calculating the LSCA score, we have shown that this score is associated with highly expressed genes in LSCs.
+LSCA score was designed to predict the prognosis of AML patients using cellular abundances. If you have a set of transcriptomic data from AML patients, you can predict the patients' prognosis by calculating the LSCA score. Cellular abundances can be calculated by CIBERSORTx using a signature matrix called HemLin9, which is composed of more than 300 genes highly expressed in 9 cell types. Although the abundances of LSCs (Leukemic Stem Cells) are not considered when calculating the LSCA score, we have shown that this score is associated with highly expressed genes in LSCs (https://pubmed.ncbi.nlm.nih.gov/38523628).
 
 # Author
 If you have any questions, please contact the email addresses provided below.
